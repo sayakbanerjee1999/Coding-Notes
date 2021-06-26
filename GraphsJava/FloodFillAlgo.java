@@ -21,3 +21,4 @@ class Solution {
             if (c+1 < image[0].length) dfs(image, r, c+1, color, newColor);
         }
     }
+}
