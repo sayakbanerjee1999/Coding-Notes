@@ -21,7 +21,7 @@ public:
                 j++;
             }
             
-            res.push_back(j-i+1);
+            res.push_back(end-i+1);                 //res.push_back(j-i+1)
             i = j+1;
         }
         
