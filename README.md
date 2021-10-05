@@ -30,6 +30,6 @@ We would be updating the codes and notes and also the reasoning section as we go
 ## Reach out:
 Feel free to connect to us and reach out. We are here to help!
 
-Sayak Banerjee https://www.linkedin.com/in/sayak-banerjee-3668a9179
+Sayak Banerjee - https://www.linkedin.com/in/sayak-banerjee-3668a9179
 
-Ishita Dasgupta https://www.linkedin.com/in/ishita-dasgupta-249937195/
+Ishita Dasgupta - https://www.linkedin.com/in/ishita-dasgupta-249937195/
