@@ -28,6 +28,6 @@ We would be updating the codes and notes and also the reasoning section as we go
 - https://www.youtube.com/c/Pepcoding/playlists - Pepcoding's DSA playlists
 
 ## Reach out:
-Feel free to connect to us and react out. We are here to help!
+Feel free to connect to us and reach out. We are here to help!
 Sayak Banerjee https://www.linkedin.com/in/sayak-banerjee-3668a9179
 Ishita Dasgupta https://www.linkedin.com/in/ishita-dasgupta-249937195/
