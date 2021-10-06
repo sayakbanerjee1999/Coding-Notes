@@ -6,6 +6,7 @@
 - [Description](#description)
 - [What's next](#whats-next)
 - [Kudos to](#kudos-to)
+- [Resources](#resources)
 - [Reach out](#reach-out)
 
 ## Inspiration
@@ -26,6 +27,12 @@ We would be updating the codes and notes and also the reasoning section as we go
 - https://drive.google.com/file/d/1FMdN_OCfOI0iAeDlqswCiC2DZzD4nPsb/view - Love Babbar's 450 DSA sheet
 - https://www.youtube.com/c/AdityaVermaTheProgrammingLord/playlists - Aditya Verma's amazing playlists (The DP God)
 - https://www.youtube.com/c/Pepcoding/playlists - Pepcoding's DSA playlists
+
+## Resources
+
+- https://books.goalkicker.com/AlgorithmsBook/
+- https://books.goalkicker.com/CPlusPlusBook/
+- https://books.goalkicker.com/JavaBook/
 
 ## Reach out:
 Feel free to connect with us and reach out. We are here to help you with all your placement preparation queries!
