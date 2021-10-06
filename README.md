@@ -24,11 +24,11 @@ We would be updating the codes and notes and also the reasoning section as we go
 ## Kudos to
 
 - https://drive.google.com/file/d/1FMdN_OCfOI0iAeDlqswCiC2DZzD4nPsb/view - Love Babbar's 450 DSA sheet
-- https://www.youtube.com/c/AdityaVermaTheProgrammingLord/playlists - Aditya Verma's amazing playlists
+- https://www.youtube.com/c/AdityaVermaTheProgrammingLord/playlists - Aditya Verma's amazing playlists (The DP God)
 - https://www.youtube.com/c/Pepcoding/playlists - Pepcoding's DSA playlists
 
 ## Reach out:
-Feel free to connect with us and reach out. We are here to help!
+Feel free to connect with us and reach out. We are here to help you with all your placement preparation queries!
 
 Sayak Banerjee - https://www.linkedin.com/in/sayak-banerjee-3668a9179
 
