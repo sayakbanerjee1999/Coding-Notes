@@ -15,7 +15,7 @@ So, we thought of sharing almost all the codes we went through to give you folks
 
 ## Description
 
-We have pushed all Java and CPP codes into respective folder. Additionally we also have a notes folder for some really informative and cool handwritten notes and concepts about DSA. You can use it as last minute revision notes too!
+We have pushed all Java and CPP codes into respective folder (If you cannot find any particular topic in CPP folder. Search in the Notes Folder). Additionally we also have a notes folder for some really informative and cool handwritten notes and concepts about DSA. You can use it as last minute revision notes too!
 
 ## What's next
 
