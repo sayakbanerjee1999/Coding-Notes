@@ -1,5 +1,6 @@
 class Solution {
   // Solution has both set and pq -
+  // Complexity (E log V) -> log V due to PQ
   public:
     vector<int> dijkstra(int V, vector<vector<int>> &edges, int src) {
         // Code here
