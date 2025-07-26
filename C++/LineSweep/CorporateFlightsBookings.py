@@ -1,4 +1,4 @@
-# LC - 
+# LC - 1109
 
 class Solution:
     def corpFlightBookings(self, bookings: List[List[int]], n: int) -> List[int]:
@@ -20,15 +20,16 @@ class Solution:
             else:
                 changes.append([point, count])
         
+        changes_dates = [date for date, _ in changes]
+
         res = []
-        idx = 0
-        # Ensures all the days in between are also taken into account even if no changes in flight bookings
+        last_value = 0
+        change_dict = {date: val for date, val in changes}
+
+        # Fill values for all days from 1 to n including 0's in the beginning
         for day in range(1, n + 1):
-            while idx + 1 < len(changes) and changes[idx + 1][0] <= day:
-                idx += 1
-            if day < changes[0][0]:
-                res.append(0)
-            else:
-                res.append(changes[idx][1])
+            if day in change_dict:
+                last_value = change_dict[day]
+            res.append(last_value)
 
         return res
