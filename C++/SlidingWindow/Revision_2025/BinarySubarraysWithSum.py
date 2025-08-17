@@ -29,3 +29,4 @@ class Solution:
 
         return windows_le_goal-windoes_le_goal_1
         
+    # To find the number of Windows convert Problem such that you find the number of windows <= goal and windows <= goal - 1. Then just subtract them
