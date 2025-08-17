@@ -6,14 +6,21 @@ class Solution:
         for i in range(1, len(height)):
             leftMax[i] = max(leftMax[i-1], height[i])
         
-        rightMax = [0]*len(height)
-        rightMax[len(height)-1] = height[len(height)-1]
-        for i in range(len(height)-2, -1, -1):
-            rightMax[i] = max(rightMax[i+1], height[i])
+        # rightMax = [0]*len(height)
+        # rightMax[len(height)-1] = height[len(height)-1]
+        # for i in range(len(height)-2, -1, -1):
+        #     rightMax[i] = max(rightMax[i+1], height[i])
         
-        # Amount of Water Trapped
+        # # Amount of Water Trapped
+        # water = 0
+        # for i in range(len(height)):
+        #     water += (min(leftMax[i], rightMax[i]) - height[i])
+        
+        # To save TimeComplexity let's calculate RightMax on the fly
         water = 0
-        for i in range(len(height)):
-            water += (min(leftMax[i], rightMax[i]) - height[i])
-        
+        rightMax = height[len(height)-1]
+        for i in range(len(height)-2, -1, -1):
+            rightMax = max(height[i], rightMax)
+            water += (min(leftMax[i], rightMax) - height[i])
+
         return water
