@@ -10,16 +10,16 @@ class Solution:
 
             if arr[mid] == target:
                 ans = mid
-
+            
             # Left Half Sorted
             if arr[lo] <= arr[mid]:
-                if target >= arr[lo] and target <= arr[mid]:
+                if target >= arr[lo] and target < arr[mid]:
                     hi = mid - 1
                 else:
                     lo = mid + 1
 
             else:
-                if target <= arr[hi] and target >= arr[mid]:
+                if target <= arr[hi] and target > arr[mid]:
                     lo = mid + 1
                 else:
                     hi = mid - 1
