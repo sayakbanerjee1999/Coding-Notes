@@ -1,4 +1,6 @@
 class Solution:
+    # Solve nth root exactly in the same way but multiple n times
+
     def helper(self, x: int, mid: int) -> int:
         if mid * mid == x:
             return 1
