@@ -1,4 +1,4 @@
-Coin Change I - Minimum Number of Ways
+// Coin Change I - Maximum Number of Ways
 
 class Solution
 {
