@@ -17,7 +17,8 @@ class Solution:
         
         
         for i in range(1, n+1):
-            for j in range(1, K+1):
+            for j in range(1, K+1):        # Works well when we do not have 0's in the array
+            # for j in range(K+1):         # If 0's in the subarray -> loop 0->K because there are subproblems now with 0
                 # Same Choice as 0/1 Knapsack
                 # If arr[i-1] <= target (j index); you can take or not take
                 # If you take take call on n-1 with reduced target sum else just call on target sum.
