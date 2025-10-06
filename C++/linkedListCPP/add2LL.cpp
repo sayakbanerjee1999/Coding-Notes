@@ -65,3 +65,54 @@ class Solution
         return reverse(head_ref);
     }
 };
+
+
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+// class Solution {
+// public:
+//     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+//         ListNode* first = l1;
+//         ListNode* second = l2;
+//         ListNode* headRef = NULL;
+//         ListNode* curr = NULL;
+//         int sum = 0;
+//         int carry = 0;
+        
+//         while(first || second){
+//             sum = carry + (first? first->val: 0) + (second? second->val: 0);
+//             carry = sum / 10;
+
+//             int digit = sum%10;
+//             ListNode* tmp = new ListNode(digit);
+//             if (headRef == NULL){
+//                 headRef = tmp;
+//                 curr = headRef;
+//             } else {
+//                 curr->next = tmp;
+//                 curr = tmp;
+//             }
+
+//             if(first)
+//                 first = first->next;
+//             if(second)
+//                 second = second->next;
+//         }
+
+//         if(carry>0){
+//             ListNode* carryNode = new ListNode(carry);
+//             curr->next = carryNode;
+//             curr = carryNode;
+//         }
+
+//         return headRef;
+//     }
+// };
