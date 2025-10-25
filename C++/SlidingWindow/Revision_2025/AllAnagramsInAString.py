@@ -1,34 +1,31 @@
-from collections import Counter
 class Solution:
     def findAnagrams(self, s: str, p: str) -> List[int]:
-        p_dict = dict(Counter(p))
-        s_dict = {}
         if len(s) < len(p):
             return []
-        
+
         res = []
-        i, j = 0, 0
-        k = len(p)
+        window_dict = defaultdict(int)
+        p_dict = defaultdict(int)
 
-        while i < len(s):
-            # Use character as key
-            if s[i] not in s_dict:
-                s_dict[s[i]] = 1
-            else:
-                s_dict[s[i]] += 1
+        for ch in p:
+            p_dict[ch] += 1
+        
+        l, r = 0, 0
+        while r < len(s):
+            window_dict[s[r]] += 1
 
-            if i-j+1 > k:
-                s_dict[s[j]] -= 1
-                if s_dict[s[j]] == 0:
-                    del s_dict[s[j]]
-                j += 1
-
-            if i-j+1 == k:
-                if s_dict == p_dict:
-                    res.append(j)
-
-            i += 1
+            if r - l + 1 < len(p):
+                r += 1
+            
+            elif r - l + 1 == len(p):
+                if window_dict == p_dict:
+                    res.append(l)
+                
+                window_dict[s[l]] -= 1
+                if window_dict[s[l]] == 0:
+                    del window_dict[s[l]]
+                
+                l += 1
+                r += 1
 
         return res
-            
-        
