@@ -39,3 +39,19 @@ def linear_regression_sgd(X, y, lr=0.01, epochs=100, batch_size=32):
             print(f"Epoch {epoch+1}/{epochs}  MSE: {epoch_loss:.4f}")
 
     return W, b, epoch_losses
+
+
+
+
+# Closed Form Solution 
+# theta = (X  T X)^-1 X.T y
+import numpy as np
+def linear_regression_normal_equation(X: list[list[float]], y: list[float]) -> list[float]:
+    # Your code here, make sure to round
+    X = np.asarray(X)
+    y = np.asarray(y)
+
+    invX = np.linalg.inv(np.dot(X.T, X))
+    forward = np.dot(X.T, y)
+    
+    theta = np.round(np.dot(invX, forward), 4)
