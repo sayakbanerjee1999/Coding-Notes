@@ -1,3 +1,16 @@
+# Since we're going to answer multiple queries on the same array, we can optimize by preprocessing 
+# the data once during initialization. The key observation is that we need to know where each word 
+# appears in the array. By storing these positions upfront, we can avoid repeatedly scanning the entire array.
+
+# Once we have the positions of both words, we need to find the closest pair of indices. If word1 appears 
+# at positions [1, 5, 9] and word2 appears at positions [3, 7, 11], we need to find the minimum of all 
+# possible distances: |1-3|, |1-7|, |1-11|, |5-3|, |5-7|, |5-11|, |9-3|, |9-7|, |9-11|.
+
+# Computing all pairwise distances would take O(m * n) time. But notice that these position lists are 
+# sorted! 
+# This is natural because we collected them by iterating through the array from left to right - so we can use a 2-pointer
+
+
 from collections import defaultdict
 from typing import List
 import math
