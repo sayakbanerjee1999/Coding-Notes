@@ -10,6 +10,9 @@ class Solution:
             if arr[mid] == target:
                 ans = mid
 
+            # One half of the array will always be sorted after rotation since the initial array was itself sorted
+            # So we will compare lo, mid initially; if arr[lo] <= arr[mid] - it means left side is sorted
+            
             # Target >= arr[lo]  /  target <= arr[hi]
             # Important edge cases; Shouldn't be simple > / <
             # Left Half sorted
