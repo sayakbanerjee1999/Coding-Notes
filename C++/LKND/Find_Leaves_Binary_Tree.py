@@ -14,6 +14,8 @@
 # Third iteration: Now 1 is a leaf, collect [1] and remove it
 # The final output would be: [[4, 5, 3], [2], [1]]
 
+# POST ORDER DFS
+
 # The key insight is recognizing that we don't actually need to simulate the removal process. 
 # Instead, we can think about when each node would be removed based on its position in the tree.
 
