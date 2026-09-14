@@ -1,3 +1,17 @@
+# Remove — The Key Trick
+# Problem: Removing from the middle of an array is O(n) because elements must shift.
+
+# Instead:
+# Replace the element to remove with the last element, then pop the last element.
+
+# 1. Get index of value from HashMap
+# 2. Get last element
+# 3. Move last element → target index
+# 4. Update last element's index in HashMap
+# 5. Pop array's last element
+# 6. Delete removed value from HashMap
+    
+
 class RandomizedSet:
 
     def __init__(self):
