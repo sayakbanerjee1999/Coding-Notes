@@ -19,7 +19,7 @@ class RandomizedSet:
         self.indexMap = defaultdict(int)
 
     def insert(self, val: int) -> bool:
-        if val in self.arr:
+        if val in self.indexMap:
             return False
         
         # Add to Array; Ad
