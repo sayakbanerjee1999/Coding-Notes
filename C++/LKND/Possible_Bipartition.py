@@ -26,6 +26,7 @@ class Solution:
                 # If this is not my parent and my neighbor has the same color as me, we found a conflict.
                 # elif nei != par and color[nei] == col:
                 # The parent condition to check is actually redundant but its common practice to check
+                # Because we do not want to go back to the node we already visited
                 elif color[nei] == col:
                     flag = 1
                     return
