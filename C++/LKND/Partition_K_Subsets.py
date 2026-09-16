@@ -1,13 +1,16 @@
+# O(k.2^n)
+
 class Solution:
     def canPartitionKSubsets(self, nums: List[int], k: int) -> bool:
+        # Write the if and Sort only when Interviewer asks to optimize
         if sum(nums)%k != 0:
             return False
+        if max(nums) > target:
+            return False
+        nums.sort(reverse = True)
 
         used = [False] * len(nums)
         target = sum(nums) / k
-
-        if max(nums) > target:
-            return False
 
         def backtrack(i, k, subsetSum):
             """
