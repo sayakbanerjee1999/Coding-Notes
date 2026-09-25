@@ -1,5 +1,5 @@
-
 # The fundamental difference
+
 # start
 
 # A start timestamp marks the beginning of a new function.
