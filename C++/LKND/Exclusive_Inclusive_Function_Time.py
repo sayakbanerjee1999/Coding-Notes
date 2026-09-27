@@ -46,3 +46,24 @@ class Solution:
               prevTime = timestamp+1
       
       return function_time
+
+
+# Time spent in the Stack (Easy)
+class Solution:
+    def inclusiveTime(self, n: int, logs: List[str]) -> List[int]:
+        stack = []                  # (function_id, start_timestamp)
+        function_time = [0] * n
+
+        for log in logs:
+            function_id, type_, timestamp = log.split(":")
+            function_id = int(function_id)
+            timestamp = int(timestamp)
+
+            if type_ == "start":
+                stack.append((function_id, timestamp))
+            else:
+                started_id, start = stack.pop()
+                # End timestamp is inclusive: the call occupies units [start, timestamp]
+                function_time[started_id] += timestamp - start + 1
+
+        return function_time
